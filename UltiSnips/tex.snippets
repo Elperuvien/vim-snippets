@@ -285,5 +285,66 @@ Je vous écris cette lettre pour ...
 \end{document}
 endsnippet
 
+snippet presentation "Squelette de présentation"
+\documentclass[usenames, dvipsnames]{classeBeamer_perso}
 
+\title{Approche micro-macro des phénomènes liés au stockage de l'hydrogène sous forme solide\\
+	\vspace{2mm}
+Application aux hydrures propres}
+\author{L.\textsc{Bebon}, D.\textsc{Chapelle}, A.\textsc{Maynadier}}
+\institute[UFC]{\textit{FEMTO-ST - Département Mécanique Appliquée - M2SC}}
+
+\date{\today}
+
+%\AtBeginSection[]{
+%	\begin{frame}{Sommaire}
+%		\small \tableofcontents[currentsection, hideothersubsections]
+%	\end{frame}
+%	}
+
+\begin{document}
+\fondTitre
+
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+\fondStandard
+	%%%
+
+\begin{frame}
+	{Points abordés}
+	\tableofcontents
+\end{frame}
+
+\section{}
+
+	%%%
+
+\begin{frame}
+
+\end{frame}
+
+\end{document}
+endsnippet
+	
+
+snippet document "Document perso femto"
+	
+\documentclass[a4paper, 11pt, dvipsnames, usenames]{documentFemto_perso}
+
+\title{"Titre"}
+\author{Ludovic \textsc{Bebon}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+
+
+\end{document}
+endsnippet
 # vim:ft=snippets:
