@@ -241,4 +241,49 @@ snippet glnl "New long glossary item" b
   ${0:description}
 }
 endsnippet
+
+snippet lettre "Modèle de lettre" b
+\documentclass[12pt]{lettre}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{eurosym}
+\usepackage[frenchb]{babel}
+\usepackage{numprint}
+
+\begin{document}
+
+\begin{letter}{%
+	Monsieur Bidule\\\\
+	1, rue Machin\\\\
+	25000 Besançon
+}
+
+\name{Ludovic \bsc{Bebon}}
+
+\address{%
+	Ludovic \bsc{Bebon}\\\\
+	5, rue Gaudot\\\\
+	25000 Besançon
+}
+
+\lieu{Besançon}
+\telephone{06.98.20.03.79}
+\email{ludovicbebon@hotmail.fr}
+\nofax
+
+\def\concname{Objet :~} % On définit ici la commande 'objet'
+\conc{Objet de la lettre}
+
+\opening{Très cher Monsieur Bidule,}
+
+Je vous écris cette lettre pour ...
+
+\closing{Formules de politesse finales.}
+\end{letter}
+\end{document}
+endsnippet
+
+
 # vim:ft=snippets:
